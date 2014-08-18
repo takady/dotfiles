@@ -1,0 +1,14 @@
+[
+  { "keys": ["ctrl+."], "command": "erb" },
+
+  // next view, prev view
+  { "keys": ["ctrl+tab"], "command": "next_view" },
+  { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+
+  // jump
+  { "keys": ["ctrl+t"], "command": "goto_definition" },
+  // jumb back
+  { "keys": ["ctrl+t", "ctrl+b"], "command": "jump_back" },
+  // jump forward
+  { "keys": ["ctrl+t", "ctrl+f"], "command": "jump_forward" },
+]
