@@ -35,5 +35,8 @@
   // code jump
   { "keys": ["ctrl+t"], "command": "goto_definition" },
   { "keys": ["ctrl+t", "ctrl+b"], "command": "jump_back" },
-]
 
+  // disable unnecessary keybind
+  { "keys": ["ctrl+o"], "command": "unbound" },
+  { "keys": ["ctrl+j"], "command": "unbound" },
+]
