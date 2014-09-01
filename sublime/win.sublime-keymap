@@ -11,7 +11,6 @@
   { "keys": ["ctrl+shift+n"], "command": "move", "args": {"by": "lines", "forward": true, "extend": true} },
 
   // re-configure disable keybinds
-  { "keys": ["ctrl+shift+d"], "command": "find_under_expand" },
   { "keys": ["ctrl+shift+v"], "command": "duplicate_line" },
   { "keys": ["ctrl+alt+t"], "command": "new_file" },
 
@@ -22,5 +21,16 @@
   // disable unnecessary keybind
   { "keys": ["ctrl+o"], "command": "unbound" },
   { "keys": ["ctrl+j"], "command": "unbound" },
-
+  { "keys": ["ctrl+f"], "command": "unbound"},
+  { "keys": ["ctrl+b"], "command": "unbound"},
+  { "keys": ["ctrl+p"], "command": "unbound"},
+  { "keys": ["ctrl+n"], "command": "unbound"},
+  { "keys": ["ctrl+a"], "command": "unbound"},
+  { "keys": ["ctrl+e"], "command": "unbound"},
+  { "keys": ["ctrl+h"], "command": "unbound" },
+  { "keys": ["ctrl+d"], "command": "unbound" },
+  { "keys": ["ctrl+x", "h"], "command": "unbound" },
+  { "keys": ["alt+w"], "command": "unbound" },
+  { "keys": ["ctrl+x", "ctrl+w"], "command": "unbound" },
+  { "keys": ["ctrl+y"], "command": "unbound" },
 ]
