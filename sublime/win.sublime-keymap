@@ -13,7 +13,7 @@
   // re-configure disable keybinds
   { "keys": ["ctrl+shift+d"], "command": "find_under_expand" },
   { "keys": ["ctrl+shift+v"], "command": "duplicate_line" },
-  { "keys": ["ctrl+t"], "command": "new_file" },
+  { "keys": ["ctrl+alt+t"], "command": "new_file" },
 
   // code jump
   { "keys": ["ctrl+t", "ctrl+t"], "command": "goto_definition" },
