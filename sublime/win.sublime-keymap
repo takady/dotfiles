@@ -5,14 +5,23 @@
 
   // emacs-like keybinds
   // select & copy
-  { "keys": ["ctrl+shift+b"], "command": "move", "args": {"by": "words", "forward": false, "extend": true} },
-  { "keys": ["ctrl+shift+f"], "command": "move", "args": {"by": "words", "forward": true, "extend": true} },
+  { "keys": ["ctrl+shift+b"], "command": "move", "args": {"by": "characters", "forward": false, "extend": true} },
+  { "keys": ["ctrl+shift+f"], "command": "move", "args": {"by": "characters", "forward": true, "extend": true} },
   { "keys": ["ctrl+shift+p"], "command": "move", "args": {"by": "lines", "forward": false, "extend": true} },
   { "keys": ["ctrl+shift+n"], "command": "move", "args": {"by": "lines", "forward": true, "extend": true} },
 
   // re-configure disable keybinds
+  { "keys": ["ctrl+h"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
   { "keys": ["ctrl+shift+v"], "command": "duplicate_line" },
   { "keys": ["ctrl+alt+t"], "command": "new_file" },
+  { "keys": ["shift+space"], "command": "auto_complete" },
+  { "keys": ["shift+space"], "command": "replace_completion_with_auto_complete", "context":
+    [
+      { "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+      { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+      { "key": "setting.tab_completion", "operator": "equal", "operand": true }
+    ]
+  },
 
   // code jump
   { "keys": ["ctrl+t", "ctrl+t"], "command": "goto_definition" },
@@ -21,10 +30,8 @@
   // disable unnecessary keybind
   { "keys": ["ctrl+o"], "command": "unbound" },
   { "keys": ["ctrl+j"], "command": "unbound" },
-  { "keys": ["ctrl+f"], "command": "unbound"},
   { "keys": ["ctrl+b"], "command": "unbound"},
   { "keys": ["ctrl+p"], "command": "unbound"},
-  { "keys": ["ctrl+n"], "command": "unbound"},
   { "keys": ["ctrl+a"], "command": "unbound"},
   { "keys": ["ctrl+e"], "command": "unbound"},
   { "keys": ["ctrl+h"], "command": "unbound" },
