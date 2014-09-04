@@ -2,6 +2,7 @@
 	"color_scheme": "Packages/User/Monokai Extended Bright (SL).tmTheme",
 	"draw_white_space": "all",
 	"ensure_newline_at_eof_on_save": true,
+  "ignored_packages": ["Vintage"],
 	"font_size": 12,
 	"highlight_line": true,
 	"tab_size": 2,
