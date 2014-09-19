@@ -9,4 +9,27 @@
   { "keys": ["ctrl+t", "ctrl+b"], "command": "jump_back" },
   // jump forward
   { "keys": ["ctrl+t", "ctrl+f"], "command": "jump_forward" },
+
+  // ruby test
+  { "keys": ["ctrl+shift+r"], "command": "run_single_ruby_test",
+    "context": [ { "key": "selector", "operator": "equal",
+                   "operand": "source.ruby, source.rspec, text.gherkin.feature"
+               } ]
+  }, // single test
+
+  { "keys": ["ctrl+shift+t"], "command": "run_all_ruby_test",
+      "context": [ { "key": "selector", "operator": "equal",
+         "operand": "source.ruby, source.rspec, text.gherkin.feature"
+                } ]
+  }, // test file
+
+  { "keys": ["alt+shift+v"], "command": "verify_ruby_file",
+    "context": [ { "key": "selector", "operator": "equal",
+                   "operand": "source.ruby"
+               } ]
+  }, // verify ruby syntax
+
+  { "keys": ["super+shift+c"], "command": "generate_file" }, // create new file
+
+  { "keys": ["ctrl+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
 ]

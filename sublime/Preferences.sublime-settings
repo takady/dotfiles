@@ -1,13 +1,16 @@
 {
 	"color_scheme": "Packages/User/Monokai Extended Bright (SL).tmTheme",
 	"draw_white_space": "all",
-	"ensure_newline_at_eof_on_save": true,
-	"ignored_packages": ["Vintage"],
-	"vintage_start_in_command_mode": false,
+	"ensure_newline_at_eof_on_save": false,
 	"font_size": 12,
 	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
 	"tab_size": 2,
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": false,
+	"vintage_start_in_command_mode": false
 }
