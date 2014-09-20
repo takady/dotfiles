@@ -75,6 +75,9 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+# env
+source $HOME/.env
+
 # rbenv
 export PATH=/usr/local/bin:$PATH
 eval "$(rbenv init -)"
