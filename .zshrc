@@ -96,6 +96,7 @@ alias cdg='cd $(ghq list -p | peco)'
 setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_no_store
+setopt hist_reduce_blanks
 
 # history search
 function peco-select-history() {
