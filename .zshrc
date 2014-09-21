@@ -79,7 +79,6 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 source $HOME/.env
 
 # rbenv
-export PATH=/usr/local/bin:$PATH
 eval "$(rbenv init -)"
 
 # editor
