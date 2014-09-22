@@ -1,3 +1,1 @@
-(setq make-backup-files nil)
-(define-key global-map "\C-h" 'delete-backward-char)
-(define-key global-map "\M-?" 'help-for-help)
+(load (expand-file-name (concat (getenv "HOME") "/.emacs.d/init")))
