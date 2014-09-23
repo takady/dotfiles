@@ -85,6 +85,7 @@ eval "$(rbenv init -)"
 export EDITOR=emacs
 alias e='emacs'
 alias s="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+export TERM="xterm-256color"
 
 # go
 export GOPATH=$HOME
