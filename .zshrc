@@ -122,7 +122,6 @@ function peco-select-tmux-history() {
     if [ -n "$buffer_list" ]; then
         BUFFER="$buffer_list"
     fi
-    zle clear-screen
 }
 zle -N peco-select-tmux-history
 bindkey '^y' peco-select-tmux-history
