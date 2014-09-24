@@ -115,3 +115,15 @@ function peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
+
+# tmux buffer paste
+function peco-select-tmux-history() {
+    local buffer_list=$(tmux list-buffer | peco | cut -f1 -d: | xargs tmux paste-buffer -b)
+    if [ -n "$buffer_list" ]; then
+        BUFFER="$buffer_list"
+    fi
+    zle clear-screen
+}
+zle -N peco-select-tmux-history
+bindkey '^y' peco-select-tmux-history
+
