@@ -50,7 +50,7 @@ ZSH_THEME="takady"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # plugins=(git)
-plugins=(git brew ruby gem rails bundler)
+plugins=(git ruby rails bundler)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -79,7 +79,6 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 source $HOME/.env
 
 # rbenv
-export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
 
 # editor
