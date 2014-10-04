@@ -34,7 +34,9 @@
   { "keys": ["alt+shift+f"], "command": "delete_trailing_spaces" },
 
   // replace
-  { "keys": ["ctrl+shift+r"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+  { "keys": ["alt+s"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+
+  //auto-complete
   { "keys": ["ctrl+enter"], "command": "auto_complete" },
   { "keys": ["ctrl+enter"], "command": "replace_completion_with_auto_complete", "context":
     [
