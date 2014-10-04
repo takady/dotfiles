@@ -48,4 +48,7 @@
 
   // open buffer
   { "keys": ["alt+a"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+
+  // paste from history
+  { "keys": ["ctrl+t", "super+v"], "command": "paste_from_history" },
 ]
