@@ -82,8 +82,9 @@ source $HOME/.env
 eval "$(rbenv init -)"
 
 # editor
-export EDITOR=emacs
-alias e='emacs'
+alias EDITOR='emacsclient -t'
+alias e='emacsclient -t'
+alias kill-emacs="emacsclient -e '(kill-emacs)'"
 alias s="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 export TERM="xterm-256color"
 
