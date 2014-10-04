@@ -4,7 +4,7 @@
   { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
 
   // jump
-  { "keys": ["ctrl+t"], "command": "goto_definition" },
+  { "keys": ["ctrl+t", "ctrl+t"], "command": "goto_definition" },
   // jumb back
   { "keys": ["ctrl+t", "ctrl+b"], "command": "jump_back" },
   // jump forward
@@ -45,4 +45,7 @@
       { "key": "setting.tab_completion", "operator": "equal", "operand": true }
     ]
   },
+
+  // open buffer
+  { "keys": ["alt+a"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
 ]
