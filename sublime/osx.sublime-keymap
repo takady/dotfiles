@@ -7,8 +7,6 @@
   { "keys": ["ctrl+t", "ctrl+t"], "command": "goto_definition" },
   // jumb back
   { "keys": ["ctrl+t", "ctrl+b"], "command": "jump_back" },
-  // jump forward
-  { "keys": ["ctrl+t", "ctrl+f"], "command": "jump_forward" },
 
   // ruby test
   { "keys": ["super+t"], "command": "run_single_ruby_test",
@@ -23,18 +21,10 @@
                 } ]
   }, // test file
 
-  { "keys": ["alt+shift+v"], "command": "verify_ruby_file",
-    "context": [ { "key": "selector", "operator": "equal",
-                   "operand": "source.ruby"
-               } ]
-  }, // verify ruby syntax
-
-  { "keys": ["ctrl+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
-
-  { "keys": ["alt+shift+f"], "command": "delete_trailing_spaces" },
-
-  // replace
+  // find and replace
+  { "keys": ["ctrl+shift+s"], "command": "show_panel", "args": {"panel": "find_in_files"} },
   { "keys": ["alt+s"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+  { "keys": ["alt+shift+f"], "command": "delete_trailing_spaces" },
 
   //auto-complete
   { "keys": ["ctrl+enter"], "command": "auto_complete" },
@@ -47,7 +37,7 @@
   },
 
   // open buffer
-  { "keys": ["alt+a"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+  { "keys": ["ctrl+r"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
 
   // paste from history
   { "keys": ["ctrl+t", "super+v"], "command": "paste_from_history" },
