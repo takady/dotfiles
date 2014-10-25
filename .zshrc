@@ -87,6 +87,7 @@ alias e='emacsclient -t'
 alias kill-emacs="emacsclient -e '(kill-emacs)'"
 alias s="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 export TERM="xterm-256color"
+alias rtags='ripper-tags -e -R -f'
 
 # go
 export GOPATH=$HOME
