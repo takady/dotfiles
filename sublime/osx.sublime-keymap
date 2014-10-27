@@ -39,6 +39,9 @@
   // open buffer
   { "keys": ["ctrl+r"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
 
+  // show/hide side bar
+  { "keys": ["super+b"], "command": "toggle_side_bar" },
+
   // paste from history
   { "keys": ["ctrl+t", "super+v"], "command": "paste_from_history" },
 ]
