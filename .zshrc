@@ -82,7 +82,7 @@ source $HOME/.env
 eval "$(rbenv init -)"
 
 # editor
-alias EDITOR='emacsclient -t'
+export EDITOR='emacsclient -t'
 alias e='emacsclient -t'
 alias kill-emacs="emacsclient -e '(kill-emacs)'"
 alias s="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
@@ -91,6 +91,10 @@ alias rtags='ripper-tags -e -R -f'
 
 # go
 export GOPATH=$HOME
+
+# pipes
+alias -g G='| grep'
+alias -g P='| peco'
 
 # ghq+peco
 alias cdg='cd $(ghq list -p | peco)'
