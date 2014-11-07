@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/User/Monokai (SL).tmTheme",
+	"color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
 	"draw_white_space": "all",
 	"ensure_newline_at_eof_on_save": false,
 	"font_face": "Ricty",
@@ -7,7 +7,8 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
+		"Markdown"
 	],
 	"tab_size": 2,
 	"translate_tabs_to_spaces": true,
