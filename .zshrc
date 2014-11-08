@@ -91,6 +91,7 @@ alias rtags='ripper-tags -e -R -f'
 
 # go
 export GOPATH=$HOME
+alias grun='go run'
 
 # pipes
 alias -g G='| grep'
