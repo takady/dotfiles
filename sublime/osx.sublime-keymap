@@ -36,6 +36,9 @@
     ]
   },
 
+  // new file
+  { "keys": ["super+t"], "command": "new_file" },
+
   // open buffer
   { "keys": ["ctrl+r"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
 
