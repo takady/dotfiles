@@ -6,7 +6,7 @@
   // jump
   { "keys": ["ctrl+t", "ctrl+t"], "command": "goto_definition" },
   // jumb back
-  { "keys": ["ctrl+t", "ctrl+b"], "command": "jump_back" },
+  { "keys": ["ctrl+t", "left"], "command": "jump_back" },
 
   // ruby test
   { "keys": ["super+t"], "command": "run_single_ruby_test",
@@ -47,4 +47,7 @@
 
   // paste from history
   { "keys": ["ctrl+t", "super+v"], "command": "paste_from_history" },
+
+  // redo
+  { "keys": ["alt+z"], "command": "redo" },
 ]
