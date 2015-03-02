@@ -23,6 +23,8 @@ alias rtags='ripper-tags -e -R -f'
 # go
 export GOPATH=$HOME
 alias grun='go run'
+export GOROOT=`go env GOROOT`
+export PATH=$GOROOT/bin:$PATH
 
 # ghq+peco
 alias cdg='cd $(ghq list -p | peco)'
