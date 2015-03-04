@@ -12,6 +12,7 @@ brew install openssl
 brew install readline
 brew install vim
 brew install --cocoa -srgb --with-gnutls --japanese emacs
+brew linkapps
 brew install cask
 brew install ctags
 brew install rbenv
