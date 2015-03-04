@@ -22,7 +22,7 @@ alias rtags='ripper-tags -e -R -f'
 
 # go
 export GOPATH=$HOME
-alias grun='go run'
+alias gorun="go run `ls *.go | grep -v _test.go`"
 export GOROOT=`go env GOROOT`
 export PATH=$GOROOT/bin:$PATH
 
