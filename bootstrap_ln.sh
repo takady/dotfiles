@@ -12,5 +12,5 @@ ln -sf ~/src/github.com/takady/.emacs.d
 ln -sf ~/src/github.com/takady/oh-my-zsh .oh-my-zsh
 
 cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-ln -sf ~/src/github.com/takady/dotfiles/Preferences.sublime-sfettings
-ln -sf ~/src/github.com/takady/dotfiles/osx.sublime-keymap Default (OSX).sublime-keymap
+ln -sf ~/src/github.com/takady/dotfiles/Preferences.sublime-settings
+ln -sf ~/src/github.com/takady/dotfiles/osx.sublime-keymap Default\ \(OSX\).sublime-keymap
