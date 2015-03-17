@@ -50,4 +50,7 @@
 
   // redo
   { "keys": ["alt+z"], "command": "redo" },
+
+  // tab reindent like emacs
+  { "keys": ["tab"], "command": "reindent" },
 ]
