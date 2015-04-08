@@ -2,7 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="takady"
-plugins=(git ruby rails bundler)
+plugins=(git ruby rails bundler colored-man)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
