@@ -31,7 +31,13 @@ function gorun() {
 }
 
 # ghq+peco
-alias cdg='cd $(ghq list -p | peco)'
+function peco-select-git-repository() {
+    local dir=$(ghq list -p | peco)
+    if [ -n "$dir" ]; then
+        cd "$dir"
+    fi
+}
+alias cdg="peco-select-git-repository"
 
 # history
 setopt hist_ignore_all_dups
