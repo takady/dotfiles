@@ -4,6 +4,7 @@ set -e
 cd ~/src/github.com/takady
 git clone https://github.com/takady/.emacs.d
 git clone https://github.com/takady/oh-my-zsh
+git clone https://github.com/powerline/powerline
 
 cd ~
 ln -sf ~/src/github.com/takady/dotfiles/.zshrc
