@@ -6,7 +6,7 @@ plugins=(git ruby rails bundler colored-man)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/src/github.com/powerline/powerline/scripts:$HOME/bin:/usr/local/bin:$PATH
 source $HOME/.env
 export TERM="xterm-256color"
 
