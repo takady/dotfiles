@@ -17,7 +17,7 @@ eval "$(rbenv init -)"
 export EDITOR='emacsclient -t'
 alias e='emacsclient -t'
 alias kill-emacs="emacsclient -e '(kill-emacs)'"
-alias s="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias s="reattach-to-user-namespace /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias rtags='ripper-tags -e -R -f'
 
 # go
