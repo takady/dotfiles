@@ -18,15 +18,15 @@ brew install ctags
 brew install rbenv
 brew install ruby-build
 brew install go --cross-compile-common
+brew install python
 brew install mysql
 brew install nkf
 brew install w3m
+brew install wget
 brew install tree
 brew install tmux
 brew install reattach-to-user-namespace
 brew install peco
-brew tap sanemat/font
-brew install ricty
 brew tap motemen/ghq
 brew install ghq
 brew tap tcnksm/ghr
