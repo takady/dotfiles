@@ -19,6 +19,7 @@ alias e='emacsclient -t'
 alias kill-emacs="emacsclient -e '(kill-emacs)'"
 alias s="reattach-to-user-namespace /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias rtags='ripper-tags -e -R -f'
+export BUNDLER_EDITOR="tmux split-window -c"
 
 # go
 export GOPATH=$HOME
