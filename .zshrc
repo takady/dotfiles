@@ -9,6 +9,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH=$HOME/src/github.com/powerline/powerline/scripts:$HOME/bin:/usr/local/bin:$PATH
 source $HOME/.env
 export TERM="xterm-256color"
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # rbenv
 eval "$(rbenv init -)"
