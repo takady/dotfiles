@@ -43,3 +43,4 @@ brew cask install cyberduck
 brew cask install insomniax
 brew tap caskroom/homebrew-versions
 brew cask install sublime-text3
+brew cask install dash
