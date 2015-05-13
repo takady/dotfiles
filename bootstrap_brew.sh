@@ -32,6 +32,7 @@ brew install ghq
 brew tap tcnksm/ghr
 brew install ghr
 
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 brew install caskroom/cask/brew-cask
 brew cask install atom
 brew cask install google-chrome
