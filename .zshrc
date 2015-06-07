@@ -55,3 +55,6 @@ function peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
+
+# colorized cat
+alias cat='pygmentize -O style=monokai -f console256 -g'
