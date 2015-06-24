@@ -43,12 +43,12 @@ alias cdg="peco-select-git-repository"
 
 # branch+peco
 function peco-select-git-branch() {
-    local branch=$(\git branch -a | grep -v '\*' | sed -e 's/ //g' | peco)
+    local branch=$(\git branch | grep -v '\*' | sed -e 's/ //g' | peco)
     if [ -n "$branch" ]; then
         git checkout "$branch"
     fi
 }
-alias gcb="peco-select-git-branch"
+alias b="peco-select-git-branch"
 
 # history
 setopt hist_ignore_all_dups
