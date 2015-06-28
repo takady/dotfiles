@@ -67,3 +67,11 @@ bindkey '^r' peco-select-history
 
 # colorized cat
 alias cat='pygmentize -O style=monokai -f console256 -g'
+
+# rust
+function rust_run() {
+    rustc $1
+    local binary=$(basename $1 .rs)
+    ./$binary
+}
+alias rr="rust_run"
