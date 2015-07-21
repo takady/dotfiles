@@ -22,6 +22,9 @@ alias s="reattach-to-user-namespace /Applications/Sublime\ Text.app/Contents/Sha
 alias rtags='ripper-tags -e -R -f'
 export BUNDLER_EDITOR="tmux split-window -c"
 
+# docker
+alias d='docker'
+
 # go
 export GOPATH=$HOME
 export GOROOT=`go env GOROOT`
