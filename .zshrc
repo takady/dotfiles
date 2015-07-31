@@ -69,7 +69,7 @@ zle -N peco-select-history
 bindkey '^r' peco-select-history
 
 # colorized cat
-alias cat='pygmentize -O style=monokai -f console256 -g'
+alias ccat='pygmentize -O style=monokai -f console256 -g'
 
 # rust
 function rust_run() {
