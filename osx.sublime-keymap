@@ -8,19 +8,6 @@
   // jumb back
   { "keys": ["ctrl+t", "left"], "command": "jump_back" },
 
-  // ruby test
-  { "keys": ["super+t"], "command": "run_single_ruby_test",
-    "context": [ { "key": "selector", "operator": "equal",
-                   "operand": "source.ruby, source.rspec, text.gherkin.feature"
-               } ]
-  }, // single test
-
-  { "keys": ["ctrl+shift+t"], "command": "run_all_ruby_test",
-      "context": [ { "key": "selector", "operator": "equal",
-         "operand": "source.ruby, source.rspec, text.gherkin.feature"
-                } ]
-  }, // test file
-
   // find and replace
   { "keys": ["ctrl+shift+s"], "command": "show_panel", "args": {"panel": "find_in_files"} },
   { "keys": ["alt+s"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
