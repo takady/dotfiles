@@ -45,3 +45,5 @@ brew cask install insomniax
 brew tap caskroom/homebrew-versions
 brew cask install sublime-text3
 brew cask install dash
+brew tap caskroom/fonts
+brew cask install font-source-han-code-jp
