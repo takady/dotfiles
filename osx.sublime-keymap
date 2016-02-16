@@ -4,9 +4,9 @@
   { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
 
   // jump
-  { "keys": ["ctrl+j", "ctrl+j"], "command": "goto_definition" },
+  { "keys": ["ctrl+t", "ctrl+t"], "command": "goto_definition" },
   // jumb back
-  { "keys": ["ctrl+j", "left"], "command": "jump_back" },
+  { "keys": ["ctrl+t", "left"], "command": "jump_back" },
 
   // find and replace
   { "keys": ["ctrl+shift+s"], "command": "show_panel", "args": {"panel": "find_in_files"} },
