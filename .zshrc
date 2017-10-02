@@ -7,7 +7,7 @@ source $ZSH/oh-my-zsh.sh
 DISABLE_AUTO_UPDATE=true
 
 # User configuration
-export PATH=$HOME/src/github.com/powerline/powerline/scripts:$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 source $HOME/.env
 export TERM="xterm-256color"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
@@ -19,22 +19,12 @@ eval "$(rbenv init -)"
 export EDITOR='emacsclient -t'
 alias e='emacsclient -t'
 alias kill-emacs="emacsclient -e '(kill-emacs)'"
-alias s="reattach-to-user-namespace /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
-alias rtags='ripper-tags -e -R -f'
 export BUNDLER_EDITOR="tmux split-window -c"
-
-# docker
-alias d='docker'
 
 # go
 export GOPATH=$HOME
 export GOROOT=`go env GOROOT`
 export PATH=$GOROOT/bin:$PATH
-
-# go run
-function gorun() {
-    go run $(ls *.go | grep -v _test.go)
-}
 
 # ghq+peco
 function peco-select-git-repository() {
@@ -68,14 +58,3 @@ function peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
-
-# colorized cat
-alias ccat='pygmentize -O style=monokai -f console256 -g'
-
-# rust
-function rust_run() {
-    rustc $1
-    local binary=$(basename $1 .rs)
-    ./$binary
-}
-alias rr="rust_run"
